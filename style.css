@@ -17,7 +17,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: #2b2d42;
 }
 
 
@@ -47,14 +47,14 @@ header ul li {
 
 header ul li a {
   display: inline-block;
-  color: #333;
+  color: #fff;
   font-weight: 400;
   margin-left: 40px;
   text-decoration: none;
 }
 
 header ul li a:hover {
-  color: #017143;
+  color: #ffb703;
 }
 
 .content {
@@ -71,14 +71,14 @@ header ul li a:hover {
 }
 
 .content .textBox h2 {
-  color: #333;
+  color: #fff;
   font-size: 4em;
   line-height: 1.4em;
   font-weight: 500;
 }
 
 .content .textBox h2 span {
-  color: #017143;
+  color: #ffb703;
   font-size: 1.2em;
   font-weight: 900;
 }
@@ -87,8 +87,8 @@ header ul li a:hover {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
-  background: #017143;
-  color: #fff;
+  background: #ffb703;
+  color: #2b2d42;
   border-radius: 40px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -96,7 +96,7 @@ header ul li a:hover {
 }
 .content .textBox a:hover {
   background: #eb7495;
-  color: #017143;
+  color: #d6f5e5;
 }
 
 .content .imgBox {
@@ -110,7 +110,6 @@ header ul li a:hover {
   .content .imgBox {
   max-width: 340px;
 }
-
 
 .thumb {
   position: absolute;
@@ -168,4 +167,55 @@ header ul li a:hover {
   height: 100%;
   background: #eb7495;
   clip-path: circle(600px at right 800px);
+}
+
+
+
+@media (max-width: 991px){
+  header{
+    padding: 20px;
+  }
+  header .logo{
+    max-width: 60px;
+  }
+  header ul{
+    position: relative;
+  }
+  header ul li{
+    font-size: 10px;
+  }
+  section{
+    padding: 20px 20px 120px;
+  }
+  .content{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  .content .textBox{
+    max-width: 100%;
+  }
+  .content .imgBox{
+    max-width: 100%;
+    justify-content: center;
+  }
+  .content .imgBox img{
+    max-width: 300px;
+  }
+  .thumb li img{
+    max-width: 40px;
+  }
+  .circle{
+    clip-path: circle(400px at center bottom)
+  }
+  .sci{
+    background: #ffb703;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
